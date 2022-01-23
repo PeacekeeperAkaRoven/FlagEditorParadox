@@ -5,7 +5,7 @@ FileTools::FileTools(Ui::MainWindow *ui, QObject *parent)
     : QObject(parent), m_ui(ui)
 {}
 
-void FileTools::openFile()
+void FileTools::FilePath()
 {
     QString fileName = QFileDialog::getOpenFileName(
                 m_ui->lineInput,

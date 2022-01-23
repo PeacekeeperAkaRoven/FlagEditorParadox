@@ -6,7 +6,6 @@
 
 int main(int argc, char *argv[])
 {
-    // ЭТО БУДУЩЕЕ!
     QApplication a(argc, argv);
 
     QTranslator translator;

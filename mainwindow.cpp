@@ -28,7 +28,7 @@ void MainWindow::on_InputButton_released()
     ui->lineInput->setText(fileName);*/
 
     //QMessageBox::warning(this, "Ошибка!","Не указанно имя флага! ");
-    m_fileTools->openFile();
+    m_fileTools->FilePath();
 }
 
 

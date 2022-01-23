@@ -10,7 +10,7 @@ class FileTools : public QObject
     Q_OBJECT
 public:
     explicit FileTools(Ui::MainWindow *ui, QObject *parent = nullptr);
-    void openFile();
+    void FilePath();
 
 private:
     Ui::MainWindow *m_ui;
