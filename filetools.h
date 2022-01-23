@@ -3,12 +3,19 @@
 
 #include <QMainWindow>
 #include <QObject>
+#include "ui_mainwindow.h"
 
 class FileTools : public QObject
 {
     Q_OBJECT
 public:
-    explicit FileTools(QObject *parent = nullptr);
+    explicit FileTools(Ui::MainWindow *ui, QObject *parent = nullptr);
+    void openFile();
+
+private:
+    Ui::MainWindow *m_ui;
+
+    QString m_filePath;
 
 signals:
 
